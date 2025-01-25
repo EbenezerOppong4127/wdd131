@@ -6,7 +6,6 @@
     --seasalt: #f8f9faff;
     --antiflash-white: #e9ecefff;
     --platinum: #ebeeef;
-    --french-gray: #ced4daff;
     --french-gray-2: #adb5bdff;
     --slate-gray: #5798d2;
     --outer-space: #f89749;
@@ -27,7 +26,6 @@
     --powder-blue: #de2222;
     --dim-gray: #5C6069ff;
     --gunmetal: #ec870c;
-    --french-gray: #B7B0BEff;
 
 
 
@@ -74,7 +72,7 @@ h2 {
 
 h2,
 h1 {
-    margin: 0%;
+    margin: 1%;
 }
 
 table {
