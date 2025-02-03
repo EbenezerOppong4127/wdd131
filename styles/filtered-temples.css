@@ -1,0 +1,188 @@
+:root {
+
+    /* change the values below to your colors from your palette */
+    --primary-color-Rich-black: #0D1B2A;
+    --secondary-color-Oxford-Blue: #1B263B;
+    --accent1-color-YInMn-Blue: #415A77;
+    --accent2-color-SilverLake-Blue: #778DA9;
+    --accent3-color-Platinum: #E0E1DD;
+
+    /* change the values below to your chosen font(s) */
+    --poppins-regular: "Poppins", sans-serif;
+    --poppins-regular-weight: 400;
+    --poppins-thin: "Poppins", sans-serif;
+    --poppins-thin-weight: 100;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--primary-color-Rich-black);
+    /* headlines on a white background */
+    --headline-color-on-color: var(--accent3-color-Platinum);
+    /* headlines on a colored background */
+    --paragraph-color-on-white: var(--primary-color-Rich-black);
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: var(--accent3-color);
+    /* paragraph text on a colored background */
+    --paragraph-background-color: var(--secondary-color-Oxford-Blue);
+    --nav-link-color: var(--accent3-color-Platinum);
+    --nav-background-color: var(--secondary-color-Oxford-Blue);
+    --nav-hover-link-color: var(--accent2-color-SilverLake-Blue);
+    --nav-hover-background-color: var(--primary-color-Rich-black);
+}
+
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--poppins-regular);
+    font-weight: var(--poppins-regular-weight);
+}
+
+
+/* mobile **************************/
+
+header {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    color: var(--headline-color-on-color);
+}
+
+header h1 {
+    width: 190px;
+    margin: auto 5px;
+    font-size: 20px;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--nav-background-color);
+    color: var(--accent1-color);
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--nav-link-color);
+
+}
+
+.navigation a:hover {
+    color: var(--accent3-color-Platinum);
+    text-decoration: underline 2px solid var(--accent3-color-Platinum);
+    transition: all 5ms ease-in-out;
+}
+
+.open a {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* main */
+
+main {
+    margin: 1rem auto;
+    max-width: 730px;
+}
+
+.home {
+    border-bottom: 1px solid var(--headline-color-on-white);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+    margin: 5px 20px;
+}
+
+
+
+.temple-card {
+    max-width: 300px;
+    height: 350px;
+    background-color: var(--accent3-color-Platinum);
+}
+
+.temple-card {
+    border: 1px solid #778DA9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0d1b2ac2;
+    margin-bottom: 30px;
+}
+
+.temple-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.temple-info {
+    margin-top: 10px;
+}
+
+.temple-info h2 {
+    font-size: 16px;
+    color: var(--secondary-color-Oxford-Blue);
+}
+
+.temple-info p {
+    font-size: 12px;
+    color: var(--accent1-color-YInMn-Blue);
+    padding: 5px;
+}
+
+.temple-info strong {
+    color: var(--headline-color-on-white);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 16px;
+}
