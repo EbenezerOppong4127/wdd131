@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="keywords" content="Product Review Form">
+    <meta name="author" content="Tro Opong Ebenezer Jules Samuel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="nameHeader">Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product-name">Product Name</label>
+            <select id="product-name" name="product-name" required aria-label="Product Name">
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating-box" id="overall-rating">
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5" required><label for="radio1">&#9733;</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4" required><label for="radio2">&#9733;</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3" required><label for="radio3">&#9733;</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2" required><label for="radio4">&#9733;</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1" required><label for="radio5">&#9733;</label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required aria-label="Installation Date">
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <div class="features">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="features">
+                    <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                    <label for="ease-of-use">Ease of Use</label>
+                </div>
+                <div class="features">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="features">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+
+
+            <div class="form-group">
+                <label for="written-review">Written Review (Optional)</label>
+                <textarea id="written-review" name="written-review" aria-label="Written Review"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="user-name">Your Name (Optional)</label>
+                <input type="text" id="user-name" name="user-name" aria-label="Your Name">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Tro Opong Ebenezer Jules Samuel - Abidjan </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
