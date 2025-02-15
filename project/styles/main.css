@@ -256,11 +256,12 @@ h5 {
   margin: 40px 0 40px;
   height: 24px;
 
-  img {
-    height: 24px;
-    width: 24px;
-  }
 }
+.social-links-row img {
+  height: 24px;
+  width: 24px;
+}
+
 
 .social-links-row a {
   filter: invert(35%) sepia(11%) saturate(160%) hue-rotate(145deg)
