@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tro Opong Apps</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-conic-gradient(from 0deg, transparent 0deg 90deg, rgba(255,255,255,0.03) 90deg 180deg);
+            animation: rotate 20s linear infinite;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            display: inline-block;
+        }
+
+        /* Content Area */
+        .content {
+            padding: 40px 30px;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #764ba2;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        /* Contact Information Styling */
+        .contact-info {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 0.9em;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .section {
+                padding: 20px 15px;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .header {
+                background: #2c3e50 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section with App Developer Info -->
+        <div class="header">
+            <div class="header-content">
+                <h1>Privacy Policy</h1>
+                <p>Mobile Applications by Tro Opong Ebenezer Jules Samuel</p>
+                <div class="last-updated">Last Updated: May 24, 2025</div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <!-- Introduction Section -->
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes how Tro Opong Ebenezer Jules Samuel ("we," "our," or "us") collects, uses, and protects your information when you use our mobile applications available on Google Play Store. We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
+                <p>By downloading, installing, or using our applications, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+            </div>
+
+            <!-- Information Collection Section -->
+            <div class="section">
+                <h2>2. Information We Collect</h2>
+                <p>We may collect the following types of information:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Information you voluntarily provide, such as name, email address, or user preferences when creating accounts or profiles.</li>
+                    <li><strong>Device Information:</strong> Information about your mobile device, including device model, operating system version, unique device identifiers, and mobile network information.</li>
+                    <li><strong>Usage Information:</strong> Information about how you use our applications, including features accessed, time spent in the app, and crash reports.</li>
+                    <li><strong>Location Information:</strong> With your explicit consent, we may collect location data to provide location-based services.</li>
+                    <li><strong>Camera and Storage:</strong> Some apps may request access to camera and storage for specific features like photo sharing or document storage.</li>
+                </ul>
+            </div>
+
+            <!-- Information Usage Section -->
+            <div class="section">
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li>To provide and maintain our mobile applications</li>
+                    <li>To improve user experience and app functionality</li>
+                    <li>To send you technical notices, updates, and support messages</li>
+                    <li>To respond to your comments, questions, and customer service requests</li>
+                    <li>To analyze usage patterns and improve our services</li>
+                    <li>To detect, prevent, and address technical issues and security vulnerabilities</li>
+                    <li>To comply with legal obligations and protect our rights</li>
+                </ul>
+            </div>
+
+            <!-- Third-Party Services Section -->
+            <div class="section">
+                <h2>4. Third-Party Services</h2>
+                <p>Our applications may integrate with third-party services that have their own privacy policies:</p>
+                <ul>
+                    <li><strong>Google Play Services:</strong> For app distribution, analytics, and crash reporting</li>
+                    <li><strong>Google AdMob:</strong> For displaying advertisements (if applicable)</li>
+                    <li><strong>Google Analytics:</strong> For usage analytics and app performance monitoring</li>
+                    <li><strong>Firebase:</strong> For backend services, authentication, and cloud storage</li>
+                </ul>
+                <p>We encourage you to review the privacy policies of these third-party services as we are not responsible for their privacy practices.</p>
+            </div>
+
+            <!-- Data Sharing Section -->
+            <div class="section">
+                <h2>5. Information Sharing and Disclosure</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With trusted third-party services that help us operate our applications</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, court order, or governmental authority</li>
+                    <li><strong>Safety and Security:</strong> To protect the rights, property, or safety of our users and the public</li>
+                    <li><strong>Business Transfers:</strong> In connection with any merger, acquisition, or sale of assets</li>
+                </ul>
+            </div>
+
+            <!-- Data Security Section -->
+            <div class="section">
+                <h2>6. Data Security</h2>
+                <p>We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+                <ul>
+                    <li>Encryption of data in transit and at rest</li>
+                    <li>Regular security assessments and updates</li>
+                    <li>Access controls and authentication mechanisms</li>
+                    <li>Secure data centers and infrastructure</li>
+                </ul>
+                <p>However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+            </div>
+
+            <!-- User Rights Section -->
+            <div class="section">
+                <h2>7. Your Rights and Choices</h2>
+                <p>You have the following rights regarding your personal information:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request access to your personal information we hold</li>
+                    <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+                    <li><strong>Portability:</strong> Request transfer of your data to another service</li>
+                    <li><strong>Withdraw Consent:</strong> Withdraw consent for data processing where applicable</li>
+                    <li><strong>Opt-out:</strong> Opt-out of promotional communications</li>
+                </ul>
+                <p>To exercise these rights, please contact us using the information provided below.</p>
+            </div>
+
+            <!-- Children's Privacy Section -->
+            <div class="section">
+                <h2>8. Children's Privacy</h2>
+                <p>Our applications are not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information promptly.</p>
+                <p>If you are a parent or guardian and believe your child has provided personal information to us, please contact us immediately.</p>
+            </div>
+
+            <!-- Data Retention Section -->
+            <div class="section">
+                <h2>9. Data Retention</h2>
+                <p>We retain your personal information only as long as necessary to fulfill the purposes for which it was collected, including:</p>
+                <ul>
+                    <li>Providing our services to you</li>
+                    <li>Complying with legal obligations</li>
+                    <li>Resolving disputes and enforcing agreements</li>
+                    <li>Improving our applications and services</li>
+                </ul>
+                <p>When personal information is no longer needed, we will securely delete or anonymize it.</p>
+            </div>
+
+            <!-- International Transfers Section -->
+            <div class="section">
+                <h2>10. International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your own. We ensure that such transfers comply with applicable data protection laws and implement appropriate safeguards to protect your information.</p>
+            </div>
+
+            <!-- Changes to Privacy Policy Section -->
+            <div class="section">
+                <h2>11. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting the updated Privacy Policy in our applications</li>
+                    <li>Sending you an email notification (if applicable)</li>
+                    <li>Displaying a notice within the application</li>
+                </ul>
+                <p>Your continued use of our applications after any changes constitutes acceptance of the updated Privacy Policy.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                <div class="contact-details">
+                    <div class="contact-item">📧 tro.opong@byshub.com</div>
+                    <div class="contact-item">📱 +225 0748207315</div>
+                    <div class="contact-item">💼 LinkedIn: tro-opong-ebenezer-jules-samuel-083566203</div>
+                    <div class="contact-item">📍 Abidjan, Côte d'Ivoire</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 Tro Opong Ebenezer Jules Samuel. All rights reserved.</p>
+            <p>This privacy policy is designed to comply with Google Play Store requirements and international privacy laws.</p>
+        </div>
+    </div>
+</body>
+</html>
